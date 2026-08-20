@@ -1,4 +1,4 @@
-import React from 'react'
+import { Link } from 'react-router-dom'
 import './ProjectCard.css'
 function ProjectCard({ project }) {
   return (
@@ -12,7 +12,7 @@ function ProjectCard({ project }) {
                   <span key={index} className='tag'>{t}</span>
                 ))}
               </div>
-              <button className='btn btn-primary'>View Project</button>
+              <Link className='btn btn-primary' to={`/projects/${project.id}`}>View Project</Link>
         </div>
       </article>
   )
