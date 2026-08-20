@@ -1,0 +1,26 @@
+.projects-page {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.projects-header {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.project-filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+@media (max-width: 768px) {
+  .projects-header {
+    align-items: center;
+    text-align: center;
+  }
+}

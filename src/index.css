@@ -120,82 +120,6 @@ color: var(--primary);
 .filter-btn:last-child {
   margin-right: 0;
 }
-/* Project and About Sections styling (but have to change ) */
-.projects-header {
-  margin-bottom: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
-
-.project-filters {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
-.projects-page {
-  padding-top: 40px;
-  padding-bottom: 60px;
-}
-
-@media (max-width: 768px) {
-  .projects-header {
-    align-items: center;
-    text-align: center;
-  }
-}
-.about-section {
-  padding: 40px 0;
-}
-
-.about-wrapper {
-  display: grid;
-  grid-template-columns: 280px 1fr;
-  align-items: center;
-  gap: 40px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.about-image {
-  display: flex;
-  justify-content: center;
-}
-
-.about-image img {
-  width: 100%;
-  max-width: 280px;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 6px solid var(--accent);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-}
-
-.about-copy h1 {
-  font-size: 2.75rem;
-  margin-bottom: 20px;
-}
-
-.about-copy p {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: var(--text);
-}
-
-@media (max-width: 860px) {
-  .about-wrapper {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .about-image {
-    margin-bottom: 25px;
-  }
-}
 /* 3. Dark Mode Global Overrides */
 body[data-theme="dark"] {
     background: #121212;
@@ -238,13 +162,6 @@ body[data-theme="dark"] .highlight {
 }
 
 
-/* About */
-body[data-theme="dark"] .about-section {
-    background: #121212;
-    color: #f5f5f5;
-}
-
-
 /* Skills */
 body[data-theme="dark"] .skills-section {
     background: #181818;
@@ -272,32 +189,6 @@ body[data-theme="dark"] .skill-card {
 }
 body[data-theme="dark"] .skill-name { color: #ffffff; }
 body[data-theme="dark"] .skill-level { color: #F18F01; }
-
-/* Projects */
-body[data-theme="dark"] .projects-section {
-    background: #121212;
-}
-
-
-body[data-theme="dark"] .project-card {
-    background: #242424;
-    color: #ffffff;
-    box-shadow: 0 5px 20px rgba(255,255,255,0.08);
-}
-
-
-body[data-theme="dark"] .project-card h3,
-body[data-theme="dark"] .project-card p {
-    color: #ffffff;
-}
-
-
-/* Tags */
-body[data-theme="dark"] .tag {
-    background: #F18F01;
-    color: #ffffff;
-}
-
 
 /* Contact */
 body[data-theme="dark"] .contact-section {

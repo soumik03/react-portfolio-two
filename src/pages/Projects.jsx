@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { projectsData, categories } from '../data/projects';
 import ProjectGrid from '../components/ProjectGrid/ProjectGrid';
+import './Projects.css';
 
 function Projects() {
 const [activeFilter, setActiveFilter] = useState('all');
